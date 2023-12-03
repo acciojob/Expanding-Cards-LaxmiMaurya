@@ -1,1 +1,38 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+.panel {
+    flex: 1;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.7s ease-in-out;
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+}
+
+.img-text {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.active {
+    flex: 5;
+}
